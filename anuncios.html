@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/estilo.css">
+
+    <title>Veículos</title>
+    <link rel="icon" href="./assets/imagens/Logo Site.svg">
+</head>
+<body>
+
+     <!--cabecalho-->
+     <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand">
+                    <img src="./assets/imagens/Logo Site.svg" width="200">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Buscar Carros ou Peças">
+                    <a href="#" search-btn>
+                        <img src="./assets/imagens/Lupa.svg" alt="Lupa" height="20" width="20">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <nav id="menu-h">
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html">Menu</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Vender</a>
+
+                    <div class="dropdown-peças">
+                        <a href="">Vender Veiculos</a>
+                        <a href="">Gerenciar Minhas Vendas</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="peças.html">Peças</a>
+        
+                    <div class="dropdown-peças">
+                        <a href="">Motor</a>
+                        <a href="">Câmbio</a>
+                        <a href="">Embreagem</a>
+                        <a href="">Suspensão</a>
+                        <a href="">Carroceria</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="./anuncios.html">Veiculos</a>
+
+                    <div class="dropdown-peças">
+                        <a href="">Novos</a>
+                        <a href="">Usados</a>
+                        <a href="">Carros</a>
+                        <a href="">Motos</a>
+                        <a href="">Caminhões</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="./limpeza.html">Cuidado Automotivo</a>
+
+                    <div class="dropdown-peças">
+                        <a href="">Limpeza</a>
+                        <a href="">Polimento</a>
+                        <a href="">Luvas e Microfibra</a>
+                        <a href="">Ceras</a>
+                        <a href="">Interno</a>
+                        <a href="">Externo</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="catalogo">
+            <div class="container">
+                <h2 class="section-title"><strong>Veículos</strong></h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/Civic.jpg" class="card-img-top" alt="Carro 1">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>HONDA CIVIC</strong></h5>
+                                <p class="card-text">Honda Civic Sedan 1.6 i-VTEC-2021</p>
+                                <h5 class="card-title"><strong>R$ 120.000</strong></h5>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/DogRam.jpg" class="card-img-top" alt="Carro 2">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>DODGE RAM</strong></h5>
+                                <p class="card-text">3500 Laramie 6.7-2022</p>
+                                <h5 class="card-title"><strong>R$459.990</strong></h5>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/Cruze.jpg" class="card-img-top" alt="Carro 3">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>CHEVROLET CRUZE</strong></h5>
+                                <p class="card-text">Cruze 1.4 Turbo LT 16V Flex 4P</p>
+                                <h5 class="card-title"><strong>R$ 100.000</strong></h5>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/Gol.jpg" class="card-img-top" alt="Carro 3">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>VOLKSWAGEN GOL</strong></h5>
+                                <p class="card-text">Volkswagen Gol 1.6 MSI 8V 4P</p>
+                                <h5 class="card-title"><strong>R$ 42.000</strong></h5>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/Jetta1" class="card-img-top" alt="Carro 3">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>VOLKSWAGEN JETTA GLI</strong></h5>
+                                <p class="card-text">VW Jetta GLI 350 2.0 TSI 2021</p>
+                                <h5 class="card-title"><strong>R$ 180.000</strong></h5>
+                                <a href="jetta.html" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/Sw4.jpg" class="card-img-top" alt="Carro 3">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>TOYOTA HILUX SW4</strong></h5>
+                                <p class="card-text">Sw4 2.8 D-4D Turbo Diesel Diamond</p>
+                                <h5 class="card-title"><strong>R$ 480.000</strong></h5>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/S10.jpg" class="card-img-top" alt="Carro 3">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>CHEVROLET S10</strong></h5>
+                                <p class="card-text">Chevrolet S10 LTZ 2.8 Turbo Diesel 4x4</p>
+                                <h5 class="card-title"><strong>R$ 240.000</strong></h5>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/Opala.jpg" class="card-img-top" alt="Carro 3">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>CHEVROLET OPALA</strong></h5>
+                                <p class="card-text">Chevrolet Opala Coupé 1975 6 Cil Turbo</p>
+                                <h5 class="card-title"><strong>R$ 70.000</strong></h5>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/Sonata.jpg" class="card-img-top" alt="Carro 3">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>HYUNDAI SONATA</strong></h5>
+                                <p class="card-text">2.7 GLS V6 24V 4P</p>
+                                <h5 class="card-title"><strong>R$ 86.000</strong></h5>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Car Shop. Todos os direitos reservados.</p>
+            <div class="social-icons">
+            
+                <img src="./assets/imagens/Iconwhats.svg" alt="WhatsApp" width="50" height="50">
+            
+                <img src="./assets/imagens/Iconinsta.svg" alt="Instagram" width="50" height="50">
+              
+                <img src="./assets/imagens/Iconface.svg" alt="Facebook" width="50" height="50">
+               
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

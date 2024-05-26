@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/estilo.css">
+
+    <title>Car Shop</title>
+    <link rel="icon" href="./assets/imagens/Logo Site.svg">
+</head>
+<body>
+
+     <!--cabecalho-->
+     <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand">
+                    <img src="./assets/imagens/Logo Site.svg" width="200">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Buscar Carros ou Peças">
+                    <a href="#" search-btn>
+                        <img src="./assets/imagens/Lupa.svg" alt="Lupa" height="20" width="20">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <nav id="menu-h">
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html">Menu</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Vender</a>
+
+                    <div class="dropdown-peças">
+                        <a href="">Vender Veiculos</a>
+                        <a href="">Gerenciar Minhas Vendas</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="peças.html">Peças</a>
+        
+                    <div class="dropdown-peças">
+                        <a href="">Motor</a>
+                        <a href="">Câmbio</a>
+                        <a href="">Embreagem</a>
+                        <a href="">Suspensão</a>
+                        <a href="">Carroceria</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="./anuncios.html">Veiculos</a>
+
+                    <div class="dropdown-peças">
+                        <a href="">Novos</a>
+                        <a href="">Usados</a>
+                        <a href="">Carros</a>
+                        <a href="">Motos</a>
+                        <a href="">Caminhões</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="./limpeza.html">Cuidado Automotivo</a>
+
+                    <div class="dropdown-peças">
+                        <a href="">Limpeza</a>
+                        <a href="">Polimento</a>
+                        <a href="">Luvas e Microfibra</a>
+                        <a href="">Ceras</a>
+                        <a href="">Interno</a>
+                        <a href="">Externo</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Caixa de busca -->
+    <section id="busca-veiculos">
+        <div class="container">
+            <h2 class="section-title">Encontre seu Veículo</h2>
+            <form id="form-busca" class="d-flex flex-wrap justify-content-between">
+                <div class="form-group">
+                    <label for="tipo">Tipo:</label>
+                    <select id="tipo" name="tipo">
+                        <option value="">Selecione</option>
+                        <option value="veiculo">Veículo</option>
+                        <option value="pecas">Peças</option>
+                        <option value="cuidados">Cuidados Automotivos</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado">
+                        <option value="">Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade">
+                </div>
+                <div class="form-group">
+                    <label for="marca">Marca:</label>
+                    <input type="text" id="marca" name="marca" placeholder="Digite a marca">
+                </div>
+                <div class="form-group">
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo" placeholder="Digite o modelo">
+                </div>
+                <div class="form-group">
+                    <label for="ano">Ano:</label>
+                    <input type="text" id="ano" name="ano" placeholder="Digite o ano">
+                </div>
+                <div class="form-group">
+                    <label for="cor">Cor:</label>
+                    <input type="text" id="cor" name="cor" placeholder="Digite a cor">
+                </div>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+        </div>
+    </section>
+
+    <main>
+        <section id="catalogo">
+            <div class="container">
+                <h2 class="section-title"><strong>Carros em Destaque</strong></h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/Carro1.jpg" class="card-img-top" alt="Carro 1">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>FIAT UNO</strong></h5>
+                                <p class="card-text">Mille Fire Economy 1.0 Manual Flex </p>
+                                <h5 class="card-title"><strong>R$ 20.000</strong></h5>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/Fuscão.jpg" class="card-img-top" alt="Carro 2">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>VOLKSWAGEN FUSCA</strong></h5>
+                                <p class="card-text">1.5 8V Gasolina 2P Manual</p>
+                                <h5 class="card-title"><strong>R$ 12.000</strong></h5>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/Astra.jpg" class="card-img-top" alt="Carro 3">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>CHEVROLET ASTRA</strong></h5>
+                                <p class="card-text">2.0 Elegance Manual - 2006</p>
+                                <h5 class="card-title"><strong>R$ 28.000</strong></h5>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section id="catalogo">
+            <div class="container">
+                <h2 class="section-title"><strong>Peças em Destaque</strong></h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/Turbina.png" class="card-img-top" alt="Turbo">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>TURBINA - R594</strong></h5>
+                                <p class="card-text">Turbina Master Power.</p>
+                                <h5 class="card-title"><strong>R$ 2.950</strong></h5>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/Kitembreagem.png" class="card-img-top" alt="Kit Embreagem">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>KIT EMBREAGEM LUK</strong></h5>
+                                <p class="card-text">Fiorino-Palio-Siena-Strada-Uno</p>
+                                <h5 class="card-title"><strong>R$ 458,00</strong></h5>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="./assets/imagens/PeçasVolante.png" class="card-img-top" alt="Carro 3">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>VOLANTE FTR</strong></h5>
+                                <p class="card-text">Volante Fuel Tech Universal.</p>
+                                <h5 class="card-title"><strong>R$ 797,00</strong></h5>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Car Shop. Todos os direitos reservados.</p>
+            <div class="social-icons">
+            
+                <img src="./assets/imagens/Iconwhats.svg" alt="WhatsApp" width="50" height="50">
+            
+                <img src="./assets/imagens/Iconinsta.svg" alt="Instagram" width="50" height="50">
+              
+                <img src="./assets/imagens/Iconface.svg" alt="Facebook" width="50" height="50">
+               
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/estilo.css">
+
+    <title>Volkswagen Jetta GLI</title>
+    <link rel="icon" href="./assets/imagens/Logo Site.svg">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand">
+                    <img src="./assets/imagens/Logo Site.svg" width="200">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Buscar Carros ou Peças">
+                    <a href="#" search-btn>
+                        <img src="./assets/imagens/Lupa.svg" alt="Lupa" height="20" width="20">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <nav id="menu-h">
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html">Menu</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Vender</a>
+
+                    <div class="dropdown-peças">
+                        <a href="">Vender Veiculos</a>
+                        <a href="">Gerenciar Minhas Vendas</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="peças.html">Peças</a>
+        
+                    <div class="dropdown-peças">
+                        <a href="">Motor</a>
+                        <a href="">Câmbio</a>
+                        <a href="">Embreagem</a>
+                        <a href="">Suspensão</a>
+                        <a href="">Carroceria</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="./anuncios.html">Veiculos</a>
+
+                    <div class="dropdown-peças">
+                        <a href="">Novos</a>
+                        <a href="">Usados</a>
+                        <a href="">Carros</a>
+                        <a href="">Motos</a>
+                        <a href="">Caminhões</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="./limpeza.html">Cuidado Automotivo</a>
+
+                    <div class="dropdown-peças">
+                        <a href="">Limpeza</a>
+                        <a href="">Polimento</a>
+                        <a href="">Luvas e Microfibra</a>
+                        <a href="">Ceras</a>
+                        <a href="">Interno</a>
+                        <a href="">Externo</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section id="jetta-gli" class="py-5">
+            <div class="container">
+                <h2 class="section-title">Volkswagen Jetta GLI</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                            <input type="radio" name="slider" id="item-1" checked>
+                            <input type="radio" name="slider" id="item-2">
+                            <input type="radio" name="slider" id="item-3">
+                            <div class="cards">
+                                <label class="foto" for="item-1" id="song-1">
+                                    <img src="./assets/imagens/Jetta1" class="img-fluid" alt="Volkswagen Jetta GLI">
+                                </label>
+                                <label class="foto" for="item-2" id="song-2">
+                                    <img src="./assets/imagens/Jetta2.webp" class="img-fluid" alt="Volkswagen Jetta GLI">
+                                </label>
+                                <label class="foto" for="item-3" id="song-3">
+                                    <img src="./assets/imagens/Jetta3.webp" class="img-fluid" alt="Volkswagen Jetta GLI">
+                                </label>
+                            </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Modelo: VW Jetta GLI 350 2.0 TSI 2021</h3>
+                        <p></p>
+                        <h4>Especificações:</h4>
+                        <ul>
+                            <li>Motor: 2.0 TSI turbo</li>
+                            <li>Potência: 350 cavalos</li>
+                            <li>Câmbio: Automático de 7 velocidades</li>
+                            <li>Ano: 2021</li>
+                            <li>Local: Curitiba-PR</li>
+                        </ul>
+                        <h4>Preço: R$ 215.000</h4>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
